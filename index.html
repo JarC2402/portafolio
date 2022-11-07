@@ -1,0 +1,128 @@
+
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio J.R.</title>
+    
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styleJR.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    
+
+</head>
+<body>
+    <header>
+      <div class="navbar">
+      <div class="navbar__container">
+        <div id="menu" class="menu"> 
+            <i id="btnClose" class='bx bx-x menu__icon menu--close'></i> 
+                 <nav class="menu__list">     
+                    <a class="menu__link" href="#home">Home</a>
+                    <a class="menu__link" href="#services">servicios</a>
+                    <a class="menu__link" href="#about">Acerca de mi</a>                    
+                    <a class="menu__link" href="#skills">Mis Habilidades</a>
+                    <a class="menu__link" href="#projects">Mi Portafolio</a>
+                    <a class="menu__link" href="#contact">Contacto</a>
+                  </nav>             
+          </div>
+          <i id="btnOpen" class='bx bx-menu'></i>
+        </div>
+      </div>
+          <div id="home" class="container">
+            <div class="content_header">
+            <div class="photo" ><img src="./Logos- Imágenes/photo-mobile.png" alt="hoto-mobile.png"></div>
+            <div class="data">
+                <h3>Soy</h3>
+                <hr class="subrayado1" size="3px" color="#d1ceca" /> 
+                <h1>Jorge</h1> 
+                <hr class="subrayado2" size="3px" color="white" />  
+                <p class="titulo">Marketing y diseñador UX/UI</p>
+                <div class="bicolor">
+                <p class="firstColor">3 años </p>
+                <p>de experiencia</p></div>
+                <span class="firstIcons">
+                    <i class='bx bxl-linkedin'></i><span>
+                    <i class='bx bxl-instagram-alt'></i></span><span>
+                    <i class='bx bxl-twitter' ></i></span></span>
+                  </div>
+                </div>
+                        <div class="container2">
+                            <div class="secondIcons">
+                            <span><i class='bx bxl-google'></i></span>
+                            <span><i class='bx bxl-amazon' ></i></span>
+                            <span><i class='bx bxl-spotify' ></i></span>
+                        </div>
+                               <h2>Acerca de mi</h2>
+                               <div id="about" class="about"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum, adipisci nihil saepe unde eligendi exercitationem rerum suscipit aperiam repellat qui! Reiciendis sapiente nesciunt nobis nemo rem sequi sit ipsa!
+                               </p> </div>
+                               
+
+                    </div>   
+            
+        </div>
+        
+        
+    </header>
+    <main>
+
+        <h2 id="services" class="azul">Servicios </h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./Logos- Imágenes/ux.png" alt="imagenes de servicios" ><img/></div>
+            <div class="swiper-slide"><img src="./Logos- Imágenes/marketing.png" alt="imagenes de servicios" ><img/></div>
+            <div class="swiper-slide"><img src="./Logos- Imágenes/research.png" alt="imagenes de servicios" ><img/></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>  
+        </div>  
+        <div class="basicImage">
+          <div class="images"><img src="./Logos- Imágenes/ux.png" alt="imagenes de servicios" ><img/></div>
+          <div class="images"><img src="./Logos- Imágenes/marketing.png" alt="imagenes de servicios" ><img/></div>
+          <div class="images"><img src="./Logos- Imágenes/research.png" alt="imagenes de servicios" ><img/></div>  
+      </div>                                      
+         <h2 class="azul">Mis Habilidades</h2>
+         <div id="skills" class="imag"><img src="./Logos- Imágenes/avancePorcentual.png" alt="imagen de nivel en conocimientos " ><img/></div>                        
+        
+         <h2 id="projects" class="azul">Mi Portafolio</h2>  
+         <div class="swiper mySwiper">
+          <div class="swiper-wrapper">                                         
+        <div class="swiper-slide"><img src="./Logos- Imágenes/ejemplo5.jpg" alt="imagenes de servicios" ><img/></div>
+        <div class="swiper-slide"><img src="./Logos- Imágenes/ejemplo2.jpg" alt="imagenes de servicios" ><img/></div>
+        <div class="swiper-slide"><img src="./Logos- Imágenes/ejemplo3.jpg" alt="imagenes de servicios" ></span></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>  
+    </div>
+    <div class="basicImage">                                         
+      <div class="images"><img src="./Logos- Imágenes/ejemplo5.jpg" alt="imagenes de servicios" ><img/></div>
+      <div class="images"><img src="./Logos- Imágenes/ejemplo2.jpg" alt="imagenes de servicios" ><img/></div>
+      <div class="images"><img src="./Logos- Imágenes/ejemplo3.jpg" alt="imagenes de servicios" ></span></div>
+    </div>
+       <h2 class="azul">Contacto</h2>
+       <div id="contact" class="basicImage1" >
+     <div class="images"><img class="images" src="./Logos- Imágenes/number2.png" alt="imagen de numero celular" ><img/></div>
+     <div class="images"><img class="images" src="./Logos- Imágenes/email.png" alt="imagen de correo electronico " ><img/></div>
+     </div>
+        
+      
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>        
+    </main>
+    <footer>
+        <h2 class="azul">Hecho con  <i class='bx bxs-heart'></i>  en Acandemlo</h2>
+    </footer>
+</body>
+</html>
+
+
+<!-- Solucionar
+ -->
+    
+
+   

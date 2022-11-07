@@ -1,0 +1,293 @@
+html {    
+    margin: 10px;
+    padding: 2px;
+}
+
+body {
+    background-color: rgb(18, 27, 55);
+    padding: 1rem;
+}
+
+.container {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar {
+    position: sticky;
+    /* height: var(--navbar-height); */
+    background-color: rgb(18, 27, 55);
+    top: -1px;
+    
+}
+
+ /* .navbar__container{
+    justify-self: end;
+} */
+
+.menu__list {
+    display: flex;
+   
+    justify-content: end;
+}
+
+.menu__link {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 40px;
+}
+
+.menu__link:first-child {
+    color: #34B0BE;
+}
+
+.bx-menu {
+    font-size: 30px;
+    display: flex;
+    justify-content: end;
+    color: #ffffff; 
+   }
+
+
+
+.bx-x {
+    display: flex;
+    justify-content: end;
+    color: #ffffff;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 50, 72);
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+hr {
+    width: 15rem;
+}
+
+h3 {
+    color: #d1ceca;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 0px;
+    color: #34B0BE;
+}
+
+h2 {
+    color: #34B0BE;
+    font-size: 30px;
+}
+
+.about p {
+ color: #d1ceca;
+ display: inline-block;
+ width: 20rem;
+}
+
+p {
+   color: #d1ceca; 
+}
+
+.bicolor {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.firstColor {
+    color: #34B0BE;   
+}
+
+.bicolor p {
+    margin: 2px;
+}
+
+.firstIcons i {
+    margin: 13px;
+    font-size: 25px;
+    background-color:  #d1ceca;
+    color: rgb(51, 49, 49);
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.secondIcons {
+    background-color: rgb(50, 50, 72);
+    border-radius: 15px;
+}
+
+.secondIcons i {
+    margin: 13px;
+    font-size: 35px;
+    background-color:  #d1ceca;
+    color: rgb(51, 49, 49);
+    border-radius: 25%;
+    padding: 3px 15px 3px 15px; 
+}
+
+.imag {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+
+}
+
+.swiper-wrapper {
+        padding: 10px;   
+}
+
+.swiper-slide, .contac {
+    margin: 10px;
+    width: 15rem;
+    height: 15rem;
+
+}
+
+.azul {
+    display: flex;
+    justify-content: center;
+    min-width: 20rem;
+}
+
+
+
+
+@media (max-width: 600px){
+    .menu {
+        position: fixed;  /* si cambias esto se daña la disposicion de menu hamb y el boton de cierre*/
+        background-color: rgb(51, 49, 49);
+        padding: 3px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        top: -400px;
+        width: 80%;
+    }
+    
+    
+
+    .menu.active {
+        top: 0;
+    }
+    .menu__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu__link {
+        margin: 5px;
+    }
+    .menu--close {
+        margin: 5px;
+        font-size: 20px;
+        position: absolute; /* con esto haces que el boton X se mantenga a la derecha */
+        display: inline-block;
+        top: 15px;
+        right: 15px;
+        }
+
+
+    .basicImage {
+        display: none;
+    }
+
+    .basicImage1 {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .images {
+        margin: 10px;
+    }
+    .subrayado1 {
+        display: none;
+       }
+    
+    }
+
+@media (min-width: 600px){
+    .bx-menu, .menu--close {
+       display: none;
+ }
+    .container {
+        flex: none;
+
+    }
+    .swiper, .mySwiper  {
+        display: none;
+    }
+
+    .content_header {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 15rem;
+    }
+
+    .photo {
+        justify-self: center;
+    }
+
+    .basicImage, .basicImage1  {
+        display: flex;
+        justify-content: center;
+    }
+
+    .images {
+        margin: 15px;
+    }
+
+   .subrayado2 {
+    display: none;
+   }
+
+   .data {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+   }
+   hr {
+    width: 8rem;
+    margin-left: 0px;
+   }
+   .titulo {
+    width: 8rem;
+   }
+   .secondIcons {
+    width: 20rem;
+   }
+ }
+
+
+
+
+
+
+
+
+
+
+ /* Dudas----
+ - como hago para el menu de hamburguesa se mantenga stiky por el 100% de la pantalla?
+ - como restauro todas las configuraciones flex o funcionalidad de una caja para que sean diferentes dependiendo del mediaqueri
+ - como modifico el tamaño de las imagenes dentro de una caja
+ - como hago para que el menu list se mantenga en frente del resto del contenido (galeria de imagenes o imagenes para dezplazar)
+ */
