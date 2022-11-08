@@ -6,6 +6,8 @@ html {
 body {
     background-color: rgb(18, 27, 55);
     padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 }
 
 .container {
@@ -21,13 +23,8 @@ body {
     position: sticky;
     /* height: var(--navbar-height); */
     background-color: rgb(18, 27, 55);
-    top: -1px;
-    
+    top: -1px;    
 }
-
- /* .navbar__container{
-    justify-self: end;
-} */
 
 .menu__list {
     display: flex;
@@ -79,15 +76,17 @@ h3 {
     margin-bottom: 0px;
 }
 
-h1 {
-    font-size: 45px;
+h1 {   
     margin: 0px;
     color: #34B0BE;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px; 
 }
 
 h2 {
     color: #34B0BE;
-    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
 }
 
 .about p {
@@ -98,6 +97,8 @@ h2 {
 
 p {
    color: #d1ceca; 
+   font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 }
 
 .bicolor {
@@ -125,12 +126,12 @@ p {
 
 .secondIcons {
     background-color: rgb(50, 50, 72);
-    border-radius: 15px;
+    border-radius: 24px;
 }
 
 .secondIcons i {
     margin: 13px;
-    font-size: 35px;
+    font-size: 40px;
     background-color:  #d1ceca;
     color: rgb(51, 49, 49);
     border-radius: 25%;
@@ -160,12 +161,43 @@ img {
 
 }
 
-.azul {
+.blue {
     display: flex;
     justify-content: center;
     min-width: 20rem;
 }
 
+.card {
+    width: 20rem;
+    height: 25rem;
+    background-color: #ffffff;
+    margin: 10px;
+    margin-right: 4rem;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Vectores/Ellipse\ 14.svg);
+    background-repeat: no-repeat;
+   }
+
+   .card__description {
+    text-align: center;
+   }
+
+   h4 {
+    font-size: 25px;
+   }
+   .card__icon img {
+    width: 100%;
+ }
+
+   .card__icon {
+    width: 100px;
+    height: auto;
+
+   }
 
 
 
@@ -218,20 +250,40 @@ img {
     .images {
         margin: 10px;
     }
-    .subrayado1 {
+    .domwLine {
         display: none;
        }
+
+    .services .containerCards {
+        display: none;
+    }
+
+    .blue {
+        text-align: center;
+    }
     
     }
 
 @media (min-width: 600px){
     .bx-menu, .menu--close {
        display: none;
- }
-    .container {
-        flex: none;
+   }
 
+    h1 {   
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px; 
     }
+
+    h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    }
+
+    body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    }
+
     .swiper, .mySwiper  {
         display: none;
     }
@@ -244,6 +296,18 @@ img {
 
     .photo {
         justify-self: center;
+        margin-top: 2rem;
+        width: 20rem;
+        height: auto;
+    }
+
+    .photo img {
+        width: 14rem;
+    }
+
+    .secondIcons {
+        display: flex;
+        justify-content: center;
     }
 
     .basicImage, .basicImage1  {
@@ -255,7 +319,7 @@ img {
         margin: 15px;
     }
 
-   .subrayado2 {
+   .domwLine2 {
     display: none;
    }
 
@@ -268,12 +332,20 @@ img {
     width: 8rem;
     margin-left: 0px;
    }
-   .titulo {
-    width: 8rem;
+   .title {
+    width: 10rem;
    }
    .secondIcons {
     width: 20rem;
    }
+   
+   .containerCards {
+    display: flex;
+    justify-content: center;    
+   }
+   
+     
+
  }
 
 
@@ -290,4 +362,5 @@ img {
  - como restauro todas las configuraciones flex o funcionalidad de una caja para que sean diferentes dependiendo del mediaqueri
  - como modifico el tamaño de las imagenes dentro de una caja
  - como hago para que el menu list se mantenga en frente del resto del contenido (galeria de imagenes o imagenes para dezplazar)
+ - que significan las lineas verticales que aparecen del lado izquierdo del codigo en vs
  */

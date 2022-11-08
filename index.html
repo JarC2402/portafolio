@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="./styleJR.css">
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"    
     />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,600&display=swap" rel="stylesheet">  
 
 </head>
 <body>
@@ -36,60 +38,89 @@
       </div>
           <div id="home" class="container">
             <div class="content_header">
-            <div class="photo" ><img src="./Logos- Imágenes/photo-mobile.png" alt="hoto-mobile.png"></div>
-            <div class="data">
+             <div class="photo" ><img src="./Logos- Imágenes/photo-mobile.png" alt="hoto-mobile.png"></div>
+             <div class="data">
                 <h3>Soy</h3>
-                <hr class="subrayado1" size="3px" color="#d1ceca" /> 
+                <hr class="domwLine" size="3px" color="#d1ceca" /> 
                 <h1>Jorge</h1> 
-                <hr class="subrayado2" size="3px" color="white" />  
-                <p class="titulo">Marketing y diseñador UX/UI</p>
+                <hr class="domwLine2" size="3px" color="white" />  
+                <p class="title">Marketing y diseñador UX/UI</p>
                 <div class="bicolor">
                 <p class="firstColor">3 años </p>
                 <p>de experiencia</p></div>
                 <span class="firstIcons">
                     <i class='bx bxl-linkedin'></i><span>
                     <i class='bx bxl-instagram-alt'></i></span><span>
-                    <i class='bx bxl-twitter' ></i></span></span>
-                  </div>
-                </div>
-                        <div class="container2">
-                            <div class="secondIcons">
-                            <span><i class='bx bxl-google'></i></span>
-                            <span><i class='bx bxl-amazon' ></i></span>
-                            <span><i class='bx bxl-spotify' ></i></span>
+                    <i class='bx bxl-twitter' ></i></span>
+                </span>
+              </div>
+            </div>
+                     <div class="container2">
+                        <div class="secondIcons">
+                        <span><i class='bx bxl-google'></i></span>
+                        <span><i class='bx bxl-amazon' ></i></span>
+                        <span><i class='bx bxl-spotify' ></i></span>
                         </div>
-                               <h2>Acerca de mi</h2>
-                               <div id="about" class="about"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum, adipisci nihil saepe unde eligendi exercitationem rerum suscipit aperiam repellat qui! Reiciendis sapiente nesciunt nobis nemo rem sequi sit ipsa!
-                               </p> </div>
-                               
-
-                    </div>   
-            
+                      </div> 
+                 <h2>Acerca de mi</h2>
+                 <div id="about" class="about"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum, adipisci nihil saepe unde eligendi exercitationem rerum suscipit aperiam repellat qui! Reiciendis sapiente nesciunt nobis nemo rem sequi sit ipsa!
+                 </p> 
+                 </div>                              
         </div>
-        
-        
     </header>
     <main>
-
-        <h2 id="services" class="azul">Servicios </h2>
+      <div class="services">
+        <h2 id="services" class="blue">Servicios </h2>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./Logos- Imágenes/ux.png" alt="imagenes de servicios" ><img/></div>
-            <div class="swiper-slide"><img src="./Logos- Imágenes/marketing.png" alt="imagenes de servicios" ><img/></div>
-            <div class="swiper-slide"><img src="./Logos- Imágenes/research.png" alt="imagenes de servicios" ><img/></div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card__icon"><img src="./íconos/pencil.svg" alt="icono de lapiz"><img/></div>
+                <div class="card__title"><h4>UX/UI Design</h4></div>
+                <div class="card__description"><p> Desde diseño hasta implementacion del desarrollo</p></div>
+               </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card__icon"><img src="./íconos/speaker.svg" alt="icono de altavoz"><img/></div>
+                <div class="card__title"><h4>Marketing</h4></div>
+                <div class="card__description"><p> Desde diseño hasta implementacion del desarrollo</p></div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card__icon"><img src="./íconos/search.svg" alt="icono de lupa"><img/></div>
+                <div class="card__title"><h4>Research</h4></div>
+                <div class="card__description"><p> Desde diseño hasta implementacion del desarrollo</p></div>
+               </div>
+            </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>  
         </div>  
-        <div class="basicImage">
-          <div class="images"><img src="./Logos- Imágenes/ux.png" alt="imagenes de servicios" ><img/></div>
-          <div class="images"><img src="./Logos- Imágenes/marketing.png" alt="imagenes de servicios" ><img/></div>
-          <div class="images"><img src="./Logos- Imágenes/research.png" alt="imagenes de servicios" ><img/></div>  
+        <div class="containerCards">
+          <div class="card">
+            <div class="card__icon"><img src="./íconos/pencil.svg" alt="icono de lapiz"><img/></div>
+            <div class="card__title"><h4>UX/UI Design</h4></div>
+            <div class="card__description"><p> Desde diseño hasta implementacion del desarrollo</p></div>
+           </div>
+           <div class="card">
+            <div class="card__icon"><img src="./íconos/speaker.svg" alt="icono de altavoz"><img/></div>
+            <div class="card__title"><h4>Marketing</h4></div>
+            <div class="card__description"><p> Desde diseño hasta implementacion del desarrollo</p></div>
+           </div>
+           <div class="card">
+            <div class="card__icon"><img src="./íconos/search.svg" alt="icono de lupa"><img/></div>
+            <div class="card__title"><h4>Research</h4></div>
+            <div class="card__description"><p> Desde diseño hasta implementacion del desarrollo</p></div>
+           </div>
+        </div>
       </div>                                      
-         <h2 class="azul">Mis Habilidades</h2>
+         <h2 class="blue">Mis Habilidades</h2>
          <div id="skills" class="imag"><img src="./Logos- Imágenes/avancePorcentual.png" alt="imagen de nivel en conocimientos " ><img/></div>                        
         
-         <h2 id="projects" class="azul">Mi Portafolio</h2>  
+         <h2 id="projects" class="blue">Mi Portafolio</h2>  
          <div class="swiper mySwiper">
           <div class="swiper-wrapper">                                         
         <div class="swiper-slide"><img src="./Logos- Imágenes/ejemplo5.jpg" alt="imagenes de servicios" ><img/></div>
@@ -104,24 +135,35 @@
       <div class="images"><img src="./Logos- Imágenes/ejemplo2.jpg" alt="imagenes de servicios" ><img/></div>
       <div class="images"><img src="./Logos- Imágenes/ejemplo3.jpg" alt="imagenes de servicios" ></span></div>
     </div>
-       <h2 class="azul">Contacto</h2>
-       <div id="contact" class="basicImage1" >
-     <div class="images"><img class="images" src="./Logos- Imágenes/number2.png" alt="imagen de numero celular" ><img/></div>
-     <div class="images"><img class="images" src="./Logos- Imágenes/email.png" alt="imagen de correo electronico " ><img/></div>
-     </div>
-        
-      
+       <h2 class="blue">Contacto</h2>
+       <div class="containerCards">
+        <div class="card">
+          <div class="card__icon"><img src="./íconos/phone.svg" alt="icono de telefono"><img/></div>
+          <div class="card__title"><h4>Numero de celular</h4></div>
+          <div class="card__description"><p> Desde diseño hasta implementacion del desarrollo</p></div>
+         </div>
+         <div class="card">
+          <div class="card__icon" ><img src="./íconos/mail.svg" alt="icono de mail" ><img/></div>
+          <div class="card__title"><h4>Mail</h4></div>
+          <div class="card__description"><p> Desde diseño hasta implementacion del desarrollo</p></div>
+         </div>
+      </div>
+    
+          
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./app.js"></script>        
     </main>
     <footer>
-        <h2 class="azul">Hecho con  <i class='bx bxs-heart'></i>  en Acandemlo</h2>
+      <div class="blue">
+        <h2 >Hecho con  <i class='bx bxs-heart'></i>  en Acandemlo</h2>
+      </div>
     </footer>
 </body>
 </html>
 
 
 <!-- Solucionar
+  - cambia todas las clases a camel case y en ingles
  -->
     
 
